@@ -1,0 +1,152 @@
+# Itertive Statements
+
+# 1. for loop
+
+# Print 1 to 5 values using range
+for x in range(1, 6):
+    print(x)
+
+
+# Print list of cars using for loop
+cars = ["BMW", "Audi", "Jaguar", "Tesla"]
+
+for c in cars: 
+    print(c)
+
+
+# Print each character from the string
+s = "python"
+
+for ch in s:
+    print(ch)
+
+
+# Print the even numbers from the given list [10, 21, 4, 15, 66]
+list = [10, 21, 4, 15, 66]
+
+for i in list:
+    if i % 2 == 0:
+        print(i)
+
+
+# Print the index of the given list
+colors = ["red", "green", "yellow", "blue", "white"]
+
+for col in range(len(colors)):
+    print(col, colors[col])
+
+
+# Iterate a tuple
+tuple = (1, 23, 342, "Python")
+
+for o in tuple:
+    print(o)
+
+
+# Iterate a dict.keys
+dict = {"name":"kumar", "age":21, "branch":"AIML"}
+
+for a in dict.keys():
+    print(a)
+
+
+# Iterate dict keys and values
+d = {"name":"kumar", "age":21, "branch":"AIML"}
+
+for b in d.items():
+    print(b)
+
+
+# 2. while loop
+
+# Print numbers from 1 to 5
+a = 1
+
+while a <= 5:
+    print(a)
+    a += 1
+
+
+# Write a program to print even numbers from 1 to 10
+num = 1
+
+while num < 11:
+    if num % 2 == 0:
+        print(num)
+    num += 1
+
+
+# Write a program to print reverse numbers from 10 to 1
+n = 10
+
+while n >= 1:
+    print(n)
+    n -= 1
+
+
+# Write a program to find the sum of numbers from 1 to 10
+v = 1
+sum = 0
+
+while v <= 10:
+    sum += v
+    print(sum)
+    v += 1
+
+
+# Write a program to print the characters of a string
+str = "python"
+a = 0
+
+while a <= len(str):
+    print(str[a])
+    a += 1
+
+
+# Write a program to print the elements from the list # list = [10, 20, 30, 40]
+list = [10, 20, 30, 40]
+b = 0
+
+while b < len(list):
+    print(list[b])
+    b += 1
+
+
+# Write a program to count a digit in numbers # numbers = 1459716497
+numbers = 1459716497
+count = 0
+
+while numbers > 0:
+    count += 1
+    numbers //= 10
+
+print(count)
+
+
+# Write a program to print a table of 7
+m = 7
+mul = 1
+
+while mul <= 10:
+    print(m * mul)
+    mul += 1
+
+
+# Write a program to print only odd numbers from 1 to 10
+z = 1
+
+while z <= 10:
+    if z % 2 != 0:
+        print(z)
+    z += 1
+
+
+# Write a program to asking a user input until they enter 0
+k = eval(input("Enter the number :"))
+
+while k != 0:
+    if k == 0:
+        print(k, "Correct Input")
+    else:
+        print("Invalid Input")
+    k = eval(input("Enter the number :"))
