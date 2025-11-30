@@ -1,0 +1,156 @@
+# Transfer Statements
+
+# break statement
+
+# Using range
+for num in range(1, 11):
+    if num == 5:
+        break
+    print(num)
+
+
+# continue statement
+
+# Using range
+for i in range(1, 11):
+    if i == 6:
+        continue
+    print(i)
+
+
+# pass statement
+
+# Using range
+for n in range(1, 11):
+    pass
+print("next time")
+
+
+# Use continue, break, pass together
+for i in range(1, 11):
+    if i == 3:
+        continue
+    elif i == 10:
+        break
+else:
+    pass
+
+
+# 1. Print numbers from 1 to 10, stop numbers when reaches 5
+for a in range(1, 11):
+    if a == 5:
+        break
+    print(a)
+
+
+# 2. Stop the loop when a character 'x' is found in a string
+q = "proximately"
+for i in q:
+    if i == 'x':
+        break
+    print(i)
+
+
+# 3. Find the first number divisible by 7
+for i in range(1, 100):
+    if i % 7 == 0:
+        print(i)
+        break
+
+
+# 4. Stop printing after the first even number /num = 3, 5, 7, 8, 11
+num = 3, 5, 7, 8, 11
+for i in num:
+    if num % 2 == 0:
+        print(i)
+        break
+
+
+# 5. Stop when the list contains 0 /list = [4, 2, 7, 0, 9]
+list = [4, 2, 7, 0, 9]
+for i in list:
+    if i == 0:
+        break
+    print(i)
+
+
+# 6. break when the total sum exceed 20. [5, 8, 4, 6, 7, 3]
+l = [5, 8, 4, 6, 7 ,3]
+sum = 0
+for i in l:
+    sum += i
+    if sum > 20:
+        break
+    print(sum)
+
+
+# 7. Read numbers until negative number appears [3, 5, -2, 7]
+k = [3, 5, -1, 7]
+for i in k:
+    if i < 0:
+        break
+    print(i)
+
+
+# 8. Print all the numbers from 1 to 10 except 5
+for i in range(1, 11):
+    if i == 5:
+        continue
+    print(i)
+
+
+# 9. Skip vowels in a string /s = "python"
+s = "python"
+for i in s:
+    if i in "aeiou":
+        continue
+    print(i)
+
+
+# 10. Print the even numbers from 1 to 20 (skip odd numbers)
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+
+
+# 11. Skip numbers divisible by 3
+for i in range(1, 31):
+    if i % 3 == 0:
+        continue
+    print(i)
+
+
+# 12. Skip the char that are digits /s = "a1b2c3"
+s = "a1b2c3"
+for i in s:
+    if i in "0123456789":
+        continue
+    print(i)
+
+
+# 13. Print list elemnt except 'None'
+list = [3, 4, 1, "None", 7, "python"]
+for i in list:
+    if i == "None":
+        continue
+    print(i)
+
+
+# 14. Skip words length < 4 /words = ["hi", "ball", "go", "tree"]
+words = ["hi", "ball", "go", "tree"]
+for i in words:
+    if len(i) < 4:
+        continue
+    print(i)
+
+
+# 15. Use pass inside a loop
+for i in range(1, 15):
+    pass
+print("next time")
+
+
+# 16. Placeholder for future code inside if
+for i in range(1, 17):
+    if i == 7:
+        pass
